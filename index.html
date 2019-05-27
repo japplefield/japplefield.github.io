@@ -8,19 +8,21 @@
   <title>Justin Applefield</title>
   <link rel = "stylesheet" href="./css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
   <script>
   function menuToggle(){
-    var x = document.getElementById("navbar");
+    var x = document.getElementById("mobile-navbar");
     if (x.style.display === "block"){x.style.display="none";}
     else{x.style.display = "block";}
   }
   </script>
+
+
 </head>
 <body>
-  <div id = "outside-wrapper">
+  <header>
     <div id = "header-nav">
       <nav>
-        <button onclick = "menuToggle()">Menu</button>
         <ul id = "navbar">
           <li class = "selected">
             <a href = "index.html">Home</a>
@@ -43,45 +45,44 @@
         </ul>
       </nav>
     </div>
-    <div id = "inside-wrapper">
-      <div id = "name">
-        <h1>Justin Applefield</h1>
-      </div>
-      <div id = "tagline">
-        Student. Creator.
-      </div>
-      <div id = "contact-info">
-        <p class = "location">
-          <a href = "https://maps.google.com/maps?q=Michigan">
-            Michigan
-          </a>
-        </p>
-        <p class = "email">
-          <a href = "mailto:justin@applefield.me">
-            justin@applefield.me
-          </a>
-        </p>
-      </div>
+    <div id = "mobile-nav">
+      <nav>
+        <button onclick = "menuToggle()">Menu</button>
+        <ul id = "mobile-navbar">
+          <li class = "selected">
+            <a href = "index.html">Home</a>
+          </li>
+          <li>
+            <a href = "bio.html">Bio</a>
+          </li>
+          <li>
+            <a href = "resume.html">Resume</a>
+          </li>
+          <li>
+            <a href = "photos.html">Photos</a>
+          </li>
+          <li>
+            <a href = "vlog.html">Vlog</a>
+          </li>
+          <li>
+            <a href = "blog.html">Blog</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <footer>
-      <div id = "social-nav">
-        <nav>
-          <ul>
-            <li>
-              <a href = "https://www.linkedin.com/in/justin-applefield/">
-                <img src = "./img/linkedin.png" height = 50px>
-              </a>
-            </li>
-            <li>
-              <a href = "https://www.youtube.com/channel/UCmV-cLA5UyLiv7KAn6fsMTQ?view_as=subscriber">
-                <img src = "./img/youtube.png" height = 50px>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      Copyright &copy; Justin Applefield, 2019
-    </footer>
+  </header>
+  <div id = "content-wrapper">
+    <div id = "big-name">
+      Justin Applefield
+    </div>
+    <div id = "subtitle-text">
+      <p>Student. Creator.</p>
+      <p>Michigan</p>
+      <a href = "mailto:justin@applefield.me">justin@applefield.me</a>
+    </div>
   </div>
+  <footer id = "footer">
+    Copyright &copy; Justin Applefield, 2019
+  </footer>
 </body>
 </html>
