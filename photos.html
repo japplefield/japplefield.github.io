@@ -8,37 +8,20 @@
   <title>Justin Applefield</title>
   <link rel = "stylesheet" href="./css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-
+  <script>
+  function menuToggle(){
+    var x = document.getElementById("navbar");
+    if (x.style.display === "block"){x.style.display="none";}
+    else{x.style.display = "block";}
+  }
+  </script>
 </head>
 <body>
   <div id = "outside-wrapper">
     <div id = "header-nav">
       <nav>
-        <ul>
-          <li>
-            <a href = "index.html">Home</a>
-          </li>
-          <li>
-            <a href = "bio.html">Bio</a>
-          </li>
-          <li>
-            <a href = "resume.html">Resume</a>
-          </li>
-          <li class = "selected">
-            <a href = "photos.html">Photos</a>
-          </li>
-          <li>
-            <a href = "vlog.html">Vlog</a>
-          </li>
-          <li>
-            <a href = "blog.html">Blog</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div id = "mobile-nav">
-      <nav>
-        <ul>
+        <button onclick = "menuToggle()">Menu</button>
+        <ul id = "navbar">
           <li>
             <a href = "index.html">Home</a>
           </li>

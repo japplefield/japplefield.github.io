@@ -1,5 +1,6 @@
 body{
   font-family: 'Ubuntu', sans-serif;
+  font-size: 12pt;
   text-transform: uppercase;
   color:#ffffff;
   padding:0;
@@ -16,7 +17,7 @@ body{
 ul{
   text-align: center;
   list-style-type: none;
-  list-style-position:inside;
+  list- style-position:inside;
   padding: 0 0 0 0;
 }
 
@@ -30,65 +31,47 @@ ul{
   height: 100%;
 }
 
-#header-nav li{
-  display:inline-block;
-    list-style-position:inside;
-  padding: 0 20px 0 20px;
-
-}
-
-#header-nav li.selected>a{
-  display:inline;
-  list-style-position:inside;
-
-  text-decoration:none;
-  color:#ffffff;
-}
-
 #header-nav a{
+  color:rgba(255, 255, 255, 0.65);
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.7);
-
-}
-
-#mobile-nav{
-  display: none;
 }
 
 #header-nav a:hover{
   color:#ffffff;
 }
 
-
-#mobile-nav li{
-  display: block;
-  text-align:center;
-  list-style:inside;
-}
-
-#mobile-nav li.selected>a{
-  text-decoration:none;
-  color:#ffffff;
-  display:block;
-}
-
-#mobile-nav a{
-  text-decoration:none;
-  color: rgba(255,255,255,0.7);
-}
-
-#mobile-nav a:hover{
+#header-nav li.selected>a{
   color:#ffffff;
 }
 
-@media (max-width: 600px){
-  #header-nav{
+#header-nav button{
+  padding: 15px;
+  color:#ffffff;
+  text-decoration: none;
+  border:none;
+  background:none;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  font-size: 12pt;
+}
+
+@media(max-width:599px){
+  #header-nav ul{
     display: none;
   }
-  #mobile-nav{
-    display:block;
+  #header-nav a .visible{
+    display: block;
   }
+}
 
+@media(min-width: 600px){
+  #header-nav button{
+    display: none;
+  }
+  #header-nav li{
+    display: inline;
+    padding: 0 20px 0 20px;
+  }
 }
 
 #name{
