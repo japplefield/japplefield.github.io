@@ -1,9 +1,10 @@
 body{
-  font: Helvetica;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  color:#ffffff;
   padding:0;
   margin:0;
   text-align:center;
-
 
   background-image: url(https://lh3.googleusercontent.com/OAL5FbDhD68GvnkoI8pFM2hExMn-3lgY2cKXk943wlB3v6y4lVrQelGoZzrMX9f4NT4tdj0Z4l6hpar11UujqtUto5UlYxEvRsnXH6dJbaeQMuxOvjGcUflZw6SD3nc9QJA4jXlao0KmFFI4cFyZhQYNA6MrsSQQ3OEG7jRlJpCD3t3xXDG6D6n4pBhZEkeL3Lw1bSBKdlvxkFUvhqYsKERh6AZixyyBaxAPo6nwp6v7soJZZUmr2l--lNnLJd-_BRe_zZfvKZnwwtLjJhzUCtr6THcNmrQTgv1cbdMAKtlhNB20dsjs8FvaFFDEiWsTk51K-_R6VQnHuREBHsKaabm7RAKYxecHuwWodVX8-bG8dziT6AFAcyC7xWuDWl1x9CQBTM_ehBM5Qz9rEC6UIgAYyrydLbMyajFa-XWlU6xJayyNDv2J54QwGvJX0LD9Z2WhaFBliUOfl3omiIIi1ISSWV7yAEhbxnZ4KbL1kZQv6mkOGs3FhQjw-cYiXesUgGm-jjY3ka_tSFjvlGkbwlWn-rY6TqmtqfpaNQ7VcksoqtyZjMg6BS35IDE8Vx1Xnmr-po7UtSWXvGx4KhAExyyA6v7aRk41WA98xdXb9b3mt5Q4RLmxnjIdBqCKTFXPUTszw5Xk1i18Zx7IjZuEfzHSrQ1Kny-8=w1680-h1410-no);
   background-position: center center;
@@ -14,7 +15,7 @@ body{
 
 #outside-wrapper{
   background-color: rgba(255, 255, 255, 0.2);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -24,22 +25,63 @@ body{
 #header-nav li{
   display:inline;
   padding: 0 20px 0 20px;
+
+}
+
+#header-nav li.selected>a{
+  display:inline;
+  text-decoration:none;
+  color:#ffffff;
 }
 
 #header-nav a{
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+
+}
+
+#mobile-nav{
+  display: none;
+}
+
+#header-nav a:hover{
   color:#ffffff;
-  text-transform: uppercase;
+}
+
+
+#mobile-nav li{
+  display: block;
+}
+
+#mobile-nav li.selected>a{
+  text-decoration:none;
+  color:#ffffff;
+  display:block;
+}
+
+#mobile-nav a{
+  text-decoration:none;
+  color: rgba(255,255,255,0.7);
+}
+
+#mobile-nav a:hover{
+  color:#ffffff;
+}
+
+@media (max-width: 600px){
+  #header-nav{
+    display: none;
+  }
+  #mobile-nav{
+    display:block;
+  }
 }
 
 #name{
-  color: #ffffff;
-  font-family: Helvetica;
-  text-transform: uppercase;
+  font-size:4vw;
 }
 
 #tagline{
-  color:#ffffff;
 }
 
 #contact-info a{
@@ -54,7 +96,7 @@ body{
 
 footer{
   position: absolute;
-  bottom:0;
+  bottom:10px;
   width: 100%;
   color:#ffffff;
 }
