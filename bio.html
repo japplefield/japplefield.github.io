@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, intial-scale = 1">
+  <meta name = "author" content = "Justin Applefield">
+  <meta name = "description" content = "Hello! My name is Justin Applefield, come check out what I am up to.">
+  <title>Justin Applefield</title>
+  <link rel = "stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+  <style>
+  body{
+    background-image: url(https://lh3.googleusercontent.com/-NIzaRROJVIlOqJ7RMFfJhTVTDv06PSuLLIlKam0quyxDXmluLpU8e7IwR9pO1CKcSpMOqbYR9O0yqgRVcKjqRAqUsBQp13yr0G9czvUHsoE5ccde7ZU_fOLmnyKhi7z8IUefYnco6v1DekExSp-0b4LIgtZDivc-o0cK-Ayf6hmJ-FA8jJ_ozEM1nu86FToR3kZTTwm5NYu8k3TP12Vfp1GyO8X5ElQGz7PFg_RFqbV4MfIeM2kK7wPp091x2T1tTfMIphPtYU7QPXz5umXraQTcMEIGi2D2S4l-LrHQRXh23DxxSQfofkzXvf7rbaqvInUNWKLNwKNPAs-OSiYw_Uj-b_7cQf0oQQQD3TKSSk6EFwJ-RxjbttOvRm8UNNREl9LrMX9aqMllz4aZECz8yY8r0OE7BHjnzwgS9gck7KI2GCrxiACcBQzi4zDIwhBzvxTzdn7oGzOvgbOAqoG4CZZpQn45hfCyS_IY3tmCQPl9JIh2bMdh1Y6xhyZlJ6ho0bZvHHG6yIegV23jDdEgFiL0Aqjn4Oy7FfI8GxALufT784PuYdH88vIYSFtrckkM6E3_KHQqzwTFNydhzJl7I80WJZkCEIwV9Vev1fZXkQnOdYhY4vDRRsT2g8eeufIDQKPAm_zp5vM4CvVrbYerHS1SRJsw_dx=w1586-h1057-no);
+  }
+  </style>
+
+  <script>
+  function menuToggle(){
+    var x = document.getElementById("mobile-navbar");
+    if (x.style.display === "block"){x.style.display="none";}
+    else{x.style.display = "block";}
+  }
+  </script>
+  <script src="js/glightbox.min.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <div id = "header-nav">
+      <nav>
+        <ul id = "navbar">
+          <li class = "selected">
+            <a href = "index.html">Home</a>
+          </li>
+          <li>
+            <a href = "bio.html">Bio</a>
+          </li>
+          <li>
+            <a href = "resume.html">Resume</a>
+          </li>
+          <li>
+            <a href = "photos.html">Photos</a>
+          </li>
+          <li>
+            <a href = "vlog.html">Vlog</a>
+          </li>
+          <li>
+            <a href = "blog.html">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div id = "mobile-nav">
+      <nav>
+        <button onclick = "menuToggle()">Menu</button>
+        <ul id = "mobile-navbar">
+          <li class = "selected">
+            <a href = "index.html">Home</a>
+          </li>
+          <li>
+            <a href = "bio.html">Bio</a>
+          </li>
+          <li>
+            <a href = "resume.html">Resume</a>
+          </li>
+          <li>
+            <a href = "photos.html">Photos</a>
+          </li>
+          <li>
+            <a href = "vlog.html">Vlog</a>
+          </li>
+          <li>
+            <a href = "blog.html">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div id = "content-wrapper">
+    <div id = "medium-name">
+      Justin Applefield
+    </div>
+    <div id = "bio-text">
+      <p>
+        Hello! My name is Justin. I am an aspiring software developer and
+        creator from West Bloomfield, Michigan.
+      </p>
+      <p>
+        I graduated in 2018 from Cranbrook Kingswood, and am currently a
+        sophomore at the University of Michigan, where I am studying Computer
+        Science in the College of Engineering, Business Adminstration in the
+        Ross School of Business, and Mandarin Chinese. I plan to pursue a
+        Bachelor of Science in Engineering and Bachelor of Business
+        Administration dual degree.
+      </p>
+      <p>
+        I have had the opportunity to work on a few cool projects in the past
+        couple of years. In May 2018 I worked with the Cranbrook Kingswood
+        Science Department and MIT's Internet of Things Lab to design a
+        curriculum to teach 9th grade physics students about the Internet of
+        Things with a hands-on project. In July-August 2018 I traveled to 7
+        countries in Asia over a 28 day period and produced a vlog every single
+        day. In 
+      </p>
+    </div>
+  </div>
+  <footer id = "footer">
+    <div id = "social-links">
+      <ul>
+        <li>
+          <a href = "https://www.linkedin.com/in/justin-applefield/">
+            <img src = "img/linkedin.png" height = 40px>
+          </a>
+        </li>
+        <li>
+          <a href = "https://www.youtube.com/channel/UCmV-cLA5UyLiv7KAn6fsMTQ?view_as=subscriber">
+            <img src = "img/youtube.png" height = 40px>
+          </a>
+        </li>
+      </ul>
+    </div>
+    Copyright &copy; Justin Applefield, 2019
+  </footer>
+</body>
+</html>
