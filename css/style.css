@@ -5,7 +5,7 @@ body{
   text-align:center;
 
 
-  background-image: url(https://lh3.googleusercontent.com/cZRkReDFPf5dEhyh5s01jepPm9rKaTaHO5u6C-wuMAqwo1wqJnuN-P9a6ReHB_HW9Iu-rpXzaI0sheigb8tjg87uTVbYR3q7bTnr1qSC-qzbongLdlJBldvSJTl8abG2UyaqP1KVBpYZeYbaX7qkDkkyxgWkiwiI-xuw8A1daStxEp2hYx_6HCcezBLr8IFcbjfl-ePnqrbmZo_5E-a1Jta4DBypfuXlS3TLLQkzt9yvH0PC6asTPJg0BTwHFwaViAIERTZ514aqqKhHubNC0widT_wWWEY6BCadTVKfudPO5CAkaJzqTDklosWrMDl3wekxsVfzudw4w8t4VZIC6UKBtDMZBurFUiQi8cWMtiHskDC7f2IoF_W-bTmmem1vlBMAKyy-QFdcAqBL7NQPI9qtYyFqZQ-0zb8uuD-ffLBsLeWShKHjToKlraJJSpWU12hoRRksykADYvQbVjCJK4J7aT3kTJNxBUuv8HLUwFxsneThdApjhGTPLOLBRiAFLqsZXqtONHWv3DgEkddq80TUl5nQeHj_4LE9UIv8LB1opkdfqFffft3Z6pt0h2x39Bw1dkflFkzOFbhE3XaN1NeRv7FQA1wMD_irKBpe3qb5LoomVWLv9mfnR4tq1Ed1TbXWCtwMZ2-M_mTDqT3-zwn7_mBkKbLw=w2748-h1832-no);
+  background-image: url(https://lh3.googleusercontent.com/OAL5FbDhD68GvnkoI8pFM2hExMn-3lgY2cKXk943wlB3v6y4lVrQelGoZzrMX9f4NT4tdj0Z4l6hpar11UujqtUto5UlYxEvRsnXH6dJbaeQMuxOvjGcUflZw6SD3nc9QJA4jXlao0KmFFI4cFyZhQYNA6MrsSQQ3OEG7jRlJpCD3t3xXDG6D6n4pBhZEkeL3Lw1bSBKdlvxkFUvhqYsKERh6AZixyyBaxAPo6nwp6v7soJZZUmr2l--lNnLJd-_BRe_zZfvKZnwwtLjJhzUCtr6THcNmrQTgv1cbdMAKtlhNB20dsjs8FvaFFDEiWsTk51K-_R6VQnHuREBHsKaabm7RAKYxecHuwWodVX8-bG8dziT6AFAcyC7xWuDWl1x9CQBTM_ehBM5Qz9rEC6UIgAYyrydLbMyajFa-XWlU6xJayyNDv2J54QwGvJX0LD9Z2WhaFBliUOfl3omiIIi1ISSWV7yAEhbxnZ4KbL1kZQv6mkOGs3FhQjw-cYiXesUgGm-jjY3ka_tSFjvlGkbwlWn-rY6TqmtqfpaNQ7VcksoqtyZjMg6BS35IDE8Vx1Xnmr-po7UtSWXvGx4KhAExyyA6v7aRk41WA98xdXb9b3mt5Q4RLmxnjIdBqCKTFXPUTszw5Xk1i18Zx7IjZuEfzHSrQ1Kny-8=w1680-h1410-no);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -13,26 +13,13 @@ body{
 }
 
 #outside-wrapper{
-
+  background-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
-
-.stretch{
-  width:auto;
-  height:auto;
-  max-width:100%;
-  max-height:100%;
-  object-fit:contain;
-  position:fixed;
-  left: 0px;
-  top: 0px;
-  z-index: -1;
-  overflow:hidden;
-  display:block;
-  margin:auto;
-  vertical-align:middle;
-
-}
-
 
 #header-nav li{
   display:inline;
