@@ -161,11 +161,15 @@ header{
   margin: 0;
 }
 
-#bio-text{
+#bio-text, #resume-window{
   max-width: 90%;
   min-width: 50%;
   width: 65vh;
   display: inline-block;
   text-transform: none;
   text-align: justify;
+}
+
+#resume-window{
+  padding-top: 35px;
 }
