@@ -170,6 +170,12 @@ header{
   text-align: justify;
 }
 
+@media (max-width: 599px){
+  #resume-window{
+    width: 400px;
+  }
+}
+
 #resume-window{
   padding-top: 35px;
 }
