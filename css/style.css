@@ -41,6 +41,7 @@ body{
 
 #medium-name{
   padding-top: 1vw;
+  padding-bottom: 2vw;
   font-size:6vw;
 }
 
@@ -183,10 +184,6 @@ header{
   #resume-window{
     width: 400px;
   }
-}
-
-#resume-window{
-  padding-top: 35px;
 }
 
 .image-wrapper{
