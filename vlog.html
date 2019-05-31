@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, intial-scale = 1">
+  <meta name = "author" content = "Justin Applefield">
+  <meta name = "description" content = "Hello! My name is Justin Applefield, come check out what I am up to.">
+  <title>Justin Applefield | Photos</title>
+  <link rel = "stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel = "stylesheet" href="css/blueimp-gallery.min.css">
+
+  <script>
+  function menuToggle(){
+    var x = document.getElementById("mobile-navbar");
+    if (x.style.display === "block"){x.style.display="none";}
+    else{x.style.display = "block";}
+  }
+  </script>
+  <script src="js/glightbox.min.js"></script>
+
+
+</head>
+<body id = "vlog-page">
+  <header>
+    <div id = "header-nav">
+      <nav>
+        <ul id = "navbar">
+          <li>
+            <a href = "index.html">Home</a>
+          </li>
+          <li>
+            <a href = "bio.html">Bio</a>
+          </li>
+          <li>
+            <a href = "resume.html">Resume</a>
+          </li>
+          <li>
+            <a href = "photos.html">Photos</a>
+          </li>
+          <li class = "selected">
+            <a href = "vlog.html">Vlog</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div id = "mobile-nav">
+      <nav>
+        <button onclick = "menuToggle()">Menu</button>
+        <ul id = "mobile-navbar">
+          <li>
+            <a href = "index.html">Home</a>
+          </li>
+          <li>
+            <a href = "bio.html">Bio</a>
+          </li>
+          <li>
+            <a href = "resume.html">Resume</a>
+          </li>
+          <li>
+            <a href = "photos.html">Photos</a>
+          </li>
+          <li class = "selected">
+            <a href = "vlog.html">Vlog</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div id = "content-wrapper">
+    <div id = "medium-name">
+      Justin Applefield
+    </div>
+    <div id = "gallery-wrapper">
+      <!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
+      <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+        <div class="slides">
+          <div class = "slide " data-index = "0">
+            <div class = "video-content slide-content" title = "Title">
+              <img class = "toggle" src = "" draggable = "false" alt = "Title">
+              <video src = "https://www.youtube.com/watch?v=xEyH9vQI0A0" poster = "https://img.youtube.com/vi/xEyH9vQI0A0/maxresdefault.jpg" controls>
+              </video>
+              <a href="https://www.youtube.com/watch?v=xEyH9vQI0A0"
+                type="text/html"
+                data-youtube="xEyH9vQI0A0"
+                data-poster="http://img.youtube.com/vi/xEyH9vQI0A0/0.jpg"
+                data-gallery>
+                LES TWINS - An Industry Ahead
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+      </div>
+    </div>
+  </div>
+
+  <footer id = "footer">
+    <div id = "social-links">
+      <ul>
+        <li>
+          <a href = "https://www.linkedin.com/in/justin-applefield/">
+            <img src = "img/linkedin.png" height = 40px>
+          </a>
+        </li>
+        <li>
+          <a href = "https://www.youtube.com/channel/UCmV-cLA5UyLiv7KAn6fsMTQ?view_as=subscriber">
+            <img src = "img/youtube.png" height = 40px>
+          </a>
+        </li>
+      </ul>
+    </div>
+    Copyright &copy; Justin Applefield, 2019
+  </footer>
+  <script src="js/blueimp-gallery.min.js"></script>
+  <script src="js/blueimp-gallery-youtube.js"></script>
+
+  <script>
+    document.getElementById('links').onclick = function (event) {
+      event = event || window.event;
+      var target = event.target || event.srcElement,
+      link = target.src ? target.parentNode : target,
+      options = {index: link, event: event},
+      links = this.getElementsByTagName('a');
+      blueimp.Gallery(links, options);
+    };
+  </script>
+  <script>
+    blueimp.Gallery(
+      document.getElementById('links').getElementsByTagName('a'),
+      {
+        container: '#blueimp-gallery-carousel',
+        carousel: true
+      }
+    );
+  </script>
+</body>
+</html>
