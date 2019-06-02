@@ -194,6 +194,11 @@ header{
   display: inline-block;
 }
 
+#gallery-wrapper{
+  display: inline-block;
+  text-align: center;
+}
+
 .image-wrapper>a>img{
   width: 30vw;
   min-width: 300px;
