@@ -18,24 +18,24 @@ body{
 }
 
 #home-page{
-  background-image: url("../img/indexbg.jpg");
+  background-image: url(https://live.staticflickr.com/65535/48855738032_150c79901a_o.jpg);
 }
 
 #bio-page{
-  background-image: url("../img/biobg.jpg");
+  background-image: url(https://live.staticflickr.com/65535/48855737932_f05c55eeec_o.jpg);
 
 }
 
 #resume-page{
-  background-image: url("../img/resumebg.jpg");
+  background-image: url(https://live.staticflickr.com/65535/48855540301_e6c2a48c49_o.jpg);
 }
 
 #photos-page{
-  background-image: url("../img/photosbg.jpg");
+  background-image: url(https://live.staticflickr.com/65535/48855738167_a8182a2990_o.jpg);
 }
 
 #vlog-page{
-  background-image: url("../img/vlogbg.jpg");
+  background-image: url(https://live.staticflickr.com/65535/48855540596_22790e33f8_o.jpg);
 }
 
 #big-name{
