@@ -18,24 +18,24 @@ body{
 }
 
 #home-page{
-  background-image: url(https://bit.ly/2JK0Sbv);
+  background-image: url("../img/indexbg.jpg");
 }
 
 #bio-page{
-  background-image: url(https://bit.ly/2I7IqX1);
+  background-image: url("../img/biobg.jpg");
 
 }
 
 #resume-page{
-  background-image: url(https://bit.ly/2WbJymj);
+  background-image: url("../img/resumebg.jpg");
 }
 
 #photos-page{
-  background-image: url(https://bit.ly/2KcC5Mn);
+  background-image: url("../img/photosbg.jpg");
 }
 
 #vlog-page{
-  background-image: url(http://bit.ly/2EHBajP);
+  background-image: url("../img/vlogbg.jpg");
 }
 
 #big-name{
