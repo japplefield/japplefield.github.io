@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, intial-scale = 1">
+  <meta name = "author" content = "Justin Applefield">
+  <meta name = "description" content = "Hello! My name is Justin Applefield, come check out what I am up to.">
+  <title>Justin Applefield | Bio</title>
+  <link rel = "stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+
+  <script>
+  function menuToggle(){
+    var x = document.getElementById("mobile-navbar");
+    if (x.style.display === "block"){x.style.display="none";}
+    else{x.style.display = "block";}
+  }
+  </script>
+  <script src="js/glightbox.min.js"></script>
+
+
+</head>
+<body id = "bio-page">
+  <header>
+    <div id = "header-nav">
+      <nav>
+        <ul id = "navbar">
+          <li>
+            <a href = "index.html">Home</a>
+          </li>
+          <li class = "selected">
+            <a href = "bio.html">Bio</a>
+          </li>
+          <li>
+            <a href = "resume.html">Resume</a>
+          </li>
+          <li>
+            <a href = "photos.html">Photos</a>
+          </li>
+          <li>
+            <a href = "vlog.html">Vlog</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div id = "mobile-nav">
+      <nav>
+        <button onclick = "menuToggle()">Menu</button>
+        <ul id = "mobile-navbar">
+          <li>
+            <a href = "index.html">Home</a>
+          </li>
+          <li class = "selected">
+            <a href = "bio.html">Bio</a>
+          </li>
+          <li>
+            <a href = "resume.html">Resume</a>
+          </li>
+          <li>
+            <a href = "photos.html">Photos</a>
+          </li>
+          <li>
+            <a href = "vlog.html">Vlog</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div id = "content-wrapper">
+    <div id = "medium-name">
+      Justin Applefield
+    </div>
+    <div id = "bio-text">
+      <p>
+        Hello! My name is Justin. I am an aspiring
+        creator from West Bloomfield, Michigan.
+      </p>
+      <p>
+        I graduated in 2018 from Cranbrook Kingswood, and am currently a
+        sophomore at the University of Michigan, where I am studying Computer
+        Science in the College of Engineering, Business Adminstration in the
+        Ross School of Business, and Mandarin Chinese. I plan to pursue a
+        Bachelor of Science in Engineering and Bachelor of Business
+        Administration dual degree. At Michigan, I am currently involved with
+        Kol HaKavod Acapella, serving as the Musical Director, and with TAMID
+        Group, an organization that aims to cultivate business leaders with
+        experiential learning through business in Israel, serving as the
+        Co-Director of Marketing for the Michigan Chapter.
+      </p>
+      <p>
+        I have had the opportunity to work on a few cool projects in the past
+        couple of years. In June 2017, I developed a curriculum to foster
+        interest in the English language among 3rd-5th graders, and traveled
+        with peers to Guiyang No. 4 Experimental Primary School in Guiyang,
+        Guizhou, China as part of an inaugural English teaching exchange program.
+        In April 2018, I was an emcee at the VEX Robotics World
+        Championship in Louisville, Kentucky, calling matches for the Spirit
+        Division. In May 201,8 I worked with the Cranbrook Kingswood
+        Science Department and MIT's Internet of Things Lab to design a
+        curriculum to teach 9th grade physics students about the Internet of
+        Things with a hands-on project. In July-August 2018, I traveled to 7
+        countries in Asia over a 28 day period and produced a vlog every single
+        day. In Fall 2018, I led the development team of "Metro Master," a game
+        designed to help visually impaired students get comfortable with
+        navigational skills, which was produced for "Gaming for the Greater
+        Good," an introductory Computer Science class at the University of
+        Michigan.
+      </p>
+      <p>
+        As you can probably tell, I have a wide array of interests including
+        music, international business, and technology. If you want to collaborate
+        on a project or just to chat, feel free to contact me at:
+        <a href = "mailto:justin@applefield.me">justin@applefield.me</a>
+      </p>
+    </div>
+  </div>
+  <footer id = "footer">
+    <div id = "social-links">
+      <ul>
+        <li>
+          <a href = "https://www.linkedin.com/in/justin-applefield/">
+            <img src = "img/linkedin.png" height = 40px>
+          </a>
+        </li>
+        <li>
+          <a href = "https://www.youtube.com/channel/UCmV-cLA5UyLiv7KAn6fsMTQ?view_as=subscriber">
+            <img src = "img/youtube.png" height = 40px>
+          </a>
+        </li>
+      </ul>
+    </div>
+    Copyright &copy; Justin Applefield, 2019
+  </footer>
+</body>
+</html>
