@@ -1,91 +1,93 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset = "UTF-8">
-  <meta name = "viewport" content = "width=device-width, intial-scale = 1">
-  <meta name = "author" content = "Justin Applefield">
-  <meta name = "description" content = "Hello! My name is Justin Applefield, come check out what I am up to.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, intial-scale = 1">
+  <meta name="author" content="Justin Applefield">
+  <meta name="description" content="Hello! My name is Justin Applefield, come check out what I am up to.">
   <title>Justin Applefield</title>
-  <link rel = "stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 
   <script>
-  function menuToggle(){
-    var x = document.getElementById("mobile-navbar");
-    if (x.style.display === "block"){x.style.display="none";}
-    else{x.style.display = "block";}
-  }
+    function menuToggle() {
+      var x = document.getElementById("mobile-navbar");
+      if (x.style.display === "block") { x.style.display = "none"; }
+      else { x.style.display = "block"; }
+    }
   </script>
-  <script src="js/glightbox.min.js"></script>
+  <script src="/js/glightbox.min.js"></script>
 
 </head>
-<body id = "home-page">
+
+<body id="home-page">
   <header>
-    <div id = "header-nav">
+    <div id="header-nav">
       <nav>
-        <ul id = "navbar">
-          <li class = "selected">
-            <a href = "index.html">Home</a>
+        <ul id="navbar">
+          <li class="selected">
+            <a href="index.html">Home</a>
           </li>
           <li>
-            <a href = "bio.html">Bio</a>
+            <a href="bio.html">Bio</a>
           </li>
           <li>
-            <a href = "resume.html">Resume</a>
+            <a href="resume.html">Resume</a>
           </li>
           <li>
-            <a href = "photos.html">Photos</a>
+            <a href="photos.html">Photos</a>
           </li>
           <li>
-            <a href = "vlog.html">Vlog</a>
+            <a href="vlog.html">Vlog</a>
           </li>
         </ul>
       </nav>
     </div>
-    <div id = "mobile-nav">
+    <div id="mobile-nav">
       <nav>
-        <button onclick = "menuToggle()">Menu</button>
-        <ul id = "mobile-navbar">
-          <li class = "selected">
-            <a href = "index.html">Home</a>
+        <button onclick="menuToggle()">Menu</button>
+        <ul id="mobile-navbar">
+          <li class="selected">
+            <a href="index.html">Home</a>
           </li>
           <li>
-            <a href = "bio.html">Bio</a>
+            <a href="bio.html">Bio</a>
           </li>
           <li>
-            <a href = "resume.html">Resume</a>
+            <a href="resume.html">Resume</a>
           </li>
           <li>
-            <a href = "photos.html">Photos</a>
+            <a href="photos.html">Photos</a>
           </li>
           <li>
-            <a href = "vlog.html">Vlog</a>
+            <a href="vlog.html">Vlog</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
-  <div id = "content-wrapper">
-    <div id = "big-name">
+  <div id="content-wrapper">
+    <div id="big-name">
       Justin Applefield
     </div>
-    <div id = "subtitle-text">
+    <div id="subtitle-text">
       <p>Student. Creator.</p>
       <p>University of Michigan</p>
-      <a href = "mailto:justin@applefield.me">justin@applefield.me</a>
+      <a href="mailto:justin@applefield.me">justin@applefield.me</a>
     </div>
   </div>
-  <footer id = "footer">
-    <div id = "social-links">
+  <footer id="footer">
+    <div id="social-links">
       <ul>
         <li>
-          <a href = "https://www.linkedin.com/in/justin-applefield/">
-            <img src = "img/linkedin.png" height = 40px>
+          <a href="https://www.linkedin.com/in/justin-applefield/">
+            <img src="img/linkedin.png" height=40px>
           </a>
         </li>
         <li>
-          <a href = "https://www.youtube.com/channel/UCmV-cLA5UyLiv7KAn6fsMTQ?view_as=subscriber">
-            <img src = "img/youtube.png" height = 40px>
+          <a href="https://www.youtube.com/channel/UCmV-cLA5UyLiv7KAn6fsMTQ?view_as=subscriber">
+            <img src="img/youtube.png" height=40px>
           </a>
         </li>
       </ul>
@@ -93,4 +95,5 @@
     Copyright &copy; Justin Applefield, 2022
   </footer>
 </body>
+
 </html>
