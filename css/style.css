@@ -1,8 +1,8 @@
-body{
+body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 12pt;
   text-transform: uppercase;
-  color:#ffffff;
+  color: #ffffff;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -17,165 +17,168 @@ body{
   background-size: cover;
 }
 
-#home-page{
+#home-page {
   background-image: url(https://live.staticflickr.com/65535/48855738032_150c79901a_o.jpg);
 }
 
-#bio-page{
+#bio-page {
   background-image: url(https://live.staticflickr.com/65535/48855737932_f05c55eeec_o.jpg);
 
 }
 
-#resume-page{
+#blog-page {
   background-image: url(https://live.staticflickr.com/65535/48855540301_e6c2a48c49_o.jpg);
 }
 
-#photos-page{
+#photos-page {
   background-image: url(https://live.staticflickr.com/65535/48855738167_a8182a2990_o.jpg);
 }
 
-#vlog-page{
+#vlog-page {
   background-image: url(https://live.staticflickr.com/65535/48855540596_22790e33f8_o.jpg);
 }
 
-#big-name{
+#big-name {
   padding-top: 6vw;
   font-size: 8vw;
 }
 
-#medium-name{
+#medium-name {
   padding-top: 1vw;
   padding-bottom: 2vw;
-  font-size:6vw;
+  font-size: 6vw;
 }
 
-#content-wrapper{
+#content-wrapper {
   flex-grow: 1;
 
 }
 
-#content-wrapper a{
+#content-wrapper a {
   text-decoration: none;
   color: #ffffff;
 }
 
-footer{
+footer {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-header{
+header {
   padding-top: 20px;
 }
 
-#header-nav ul{
+#header-nav ul {
   list-style: none;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
 
-#header-nav{
+#header-nav {
   padding: 5px;
   position: sticky;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
 }
 
-#header-nav a{
-  color:rgba(255, 255, 255, 0.65);
+#header-nav a {
+  color: rgba(255, 255, 255, 0.65);
   text-decoration: none;
 }
 
-#header-nav a:hover{
-  color:#ffffff;
+#header-nav a:hover {
+  color: #ffffff;
 }
 
-#header-nav li.selected>a{
-  color:#ffffff;
+#header-nav li.selected>a {
+  color: #ffffff;
 }
 
-#mobile-nav{
+#mobile-nav {
   padding: 5px;
   position: sticky;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
 }
 
-#mobile-nav a{
-  color:rgba(255, 255, 255, 0.65);
+#mobile-nav a {
+  color: rgba(255, 255, 255, 0.65);
   text-decoration: none;
 }
 
-#mobile-nav a:hover{
-  color:#ffffff;
+#mobile-nav a:hover {
+  color: #ffffff;
 }
 
-#mobile-nav li.selected>a{
-  color:#ffffff;
+#mobile-nav li.selected>a {
+  color: #ffffff;
 }
 
-#mobile-nav button{
+#mobile-nav button {
   padding: 15px;
-  color:#ffffff;
+  color: #ffffff;
   text-decoration: none;
-  border:none;
-  background:none;
+  border: none;
+  background: none;
   font-family: 'Ubuntu', sans-serif;
   text-transform: uppercase;
   font-size: 12pt;
 }
 
-@media(max-width:599px){
-  #header-nav{
+@media(max-width:599px) {
+  #header-nav {
     display: none;
   }
 
-  #mobile-nav ul{
+  #mobile-nav ul {
     display: none;
     list-style: none;
     padding: 0;
   }
-  #mobile-nav ul{
+
+  #mobile-nav ul {
     padding-bottom: 5px;
   }
 }
 
-@media(min-width: 600px){
-  #header-nav ul{
+@media(min-width: 600px) {
+  #header-nav ul {
     display: inline;
   }
-  #header-nav li{
+
+  #header-nav li {
     display: inline;
     padding: 0 20px 0 20px;
   }
 
-  #mobile-nav{
+  #mobile-nav {
     display: none;
   }
 }
 
-@media(min-width: 1000px){
-  #subtitle-text{
+@media(min-width: 1000px) {
+  #subtitle-text {
     font-size: 2vw;
   }
 }
 
-#social-links ul{
+#social-links ul {
   padding: 0;
   list-style: none;
 }
 
-#social-links li{
+#social-links li {
   display: inline;
   padding: 0 20px 0 20px;
   margin: 0;
 }
 
-#social-links a{
+#social-links a {
   text-decoration: none;
 }
 
-#bio-text, #resume-window{
+#bio-text,
+#blog-window {
   max-width: 90%;
   min-width: 50%;
   width: 65vh;
@@ -184,22 +187,22 @@ header{
   text-align: justify;
 }
 
-@media (max-width: 599px){
-  #resume-window{
+@media (max-width: 599px) {
+  #blog-window {
     width: 400px;
   }
 }
 
-.image-wrapper{
+.image-wrapper {
   display: inline-block;
 }
 
-#gallery-wrapper{
+#gallery-wrapper {
   display: inline-block;
   text-align: center;
 }
 
-.image-wrapper>a>img{
+.image-wrapper>a>img {
   width: 30vw;
   min-width: 300px;
 }
