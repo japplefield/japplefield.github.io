@@ -271,3 +271,48 @@ header {
   width: 1rem;
   height: 1rem;
 }
+
+#blog-container {
+  display: grid;
+  justify-content: center;
+}
+
+#blog-body {
+  --mw: min(70vw, 800px);
+  max-width: var(--mw);
+}
+
+#blog-title {
+  font-size: 2vw;
+  padding: 15pt;
+  font-weight: bold;
+}
+
+#blog-date {
+  font-style: italic;
+  text-transform: none;
+  padding: 5pt;
+}
+
+.blog-image {
+  background-color: rgba(255, 255, 255, 0.4);
+  max-width: calc(0.9 * var(--mw));
+  color: rgb(40, 40, 40);
+  display: grid;
+  justify-content: center;
+}
+
+.blog-paragraph {
+  padding: 15pt;
+  text-transform: none;
+}
+
+.blog-image>img {
+  padding: 15pt;
+  max-width: calc(0.8 * var(--mw));
+}
+
+.blog-image>p {
+  padding-left: 10pt;
+  padding-right: 10pt;
+}
