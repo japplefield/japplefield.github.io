@@ -280,6 +280,9 @@ header {
 #blog-body {
   --mw: min(70vw, 800px);
   max-width: var(--mw);
+  display: grid;
+  justify-content: center;
+  text-align: center;
 }
 
 #blog-title {
@@ -298,8 +301,8 @@ header {
   background-color: rgba(255, 255, 255, 0.4);
   max-width: calc(0.9 * var(--mw));
   color: rgb(40, 40, 40);
-  display: grid;
-  justify-content: center;
+  display: inline-block;
+  margin: auto;
 }
 
 .blog-paragraph {
