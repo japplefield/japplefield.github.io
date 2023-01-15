@@ -286,9 +286,12 @@ header {
 }
 
 #blog-title {
-  font-size: 2vw;
+  --fs: max(2vw, 20pt);
+  font-size: var(--fs);
   padding: 15pt;
   font-weight: bold;
+  --mw: min(70vw, 800px);
+  max-width: var(--mw);
 }
 
 #blog-date {
