@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, intial-scale = 1">
+  <meta name="author" content="Justin Applefield">
+  <meta name="description" content="Hello! My name is Justin Applefield, come check out what I am up to.">
+  <title>Justin Applefield | Blog</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+
+  <script>
+    function menuToggle() {
+      var x = document.getElementById("mobile-navbar");
+      if (x.style.display === "block") { x.style.display = "none"; }
+      else { x.style.display = "block"; }
+    }
+  </script>
+  <script src="/js/glightbox.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+</head>
+
+<body id="blog-page">
+  <header>
+    <div id="header-nav">
+      <nav>
+        <ul id="navbar">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/bio/">Bio</a>
+          </li>
+          <li>
+            <a href="/photos/">Photos</a>
+          </li>
+          <li class="selected">
+            <a href="/blog/">Blog</a>
+          </li>
+          <li>
+            <a href="/vlog/">Vlog</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div id="mobile-nav">
+      <nav>
+        <button onclick="menuToggle()">Menu</button>
+        <ul id="mobile-navbar">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/bio/">Bio</a>
+          </li>
+          <li>
+            <a href="/photos/">Photos</a>
+          </li>
+          <li class="selected">
+            <a href="/blog/">Blog</a>
+          </li>
+          <li>
+            <a href="/vlog/">Vlog</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div id="content-wrapper">
+    <div id="medium-name">
+      Justin Applefield
+    </div>
+    <div id="blog-container">
+      <div id="blog-title">
+        Bali Part 2: Tulamben Bay
+      </div>
+      <div id="blog-date">
+        January 18, 2023
+      </div>
+      <div id="blog-body">
+        <div class="blog-paragraph">
+          Today I planned to go to Angkor Wat. In order to watch the sunrise, I had arranged with the hotel for a driver and a tour guide to meet and leave at 5am. I woke up around 4:30am and took a quick shower before heading downstairs. My driver for today, Shwet (definitely spelled wrong, Khmer names are very hard to spell and pronounce for me), was the same driver who had picked me up from the airport yesterday. Waiting outside was also my tour guide, Arn (again, name definitely spelled wrong). 
+        </div>
+        <div class="blog-image">
+          <img src="/img/blog-10-11.jpeg" alt="My tour guide, Arn" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <footer id="footer">
+    <div id="social-links">
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/justin-applefield/">
+            <img src="/img/linkedin.png" height=40px>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCmV-cLA5UyLiv7KAn6fsMTQ?view_as=subscriber">
+            <img src="/img/youtube.png" height=40px>
+          </a>
+        </li>
+      </ul>
+    </div>
+    Copyright &copy; Justin Applefield, 2022
+  </footer>
+</body>
+
+<script>
+  $.each($(".blog-image"), function () {
+    var image = $(this).children('img');
+    var altText = image.attr('alt');
+    var newParagraph = document.createElement('p');
+    $(newParagraph).html(altText);
+    $(this).append(newParagraph);
+  })
+</script>
+
+</html>
